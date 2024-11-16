@@ -1,0 +1,56 @@
+[dir="rtl"] .allitem .items .item-one img{
+    border-radius: 0px  10px 10px 0px;
+}
+
+[dir="rtl"] .allitem .items .add-product{
+    top:8%;
+    left:3%;
+    text-align: left;
+}
+
+[dir="rtl"] .items .add-product button{
+    position: absolute;
+    left: 0px;
+}
+
+[dir="rtl"] .items .item-description{
+    right: 38%;
+    width: 200px;
+    top: 5%;
+    color:rgb(0, 0, 0);
+    position:absolute;
+}
+
+
+[dir="rtl"] .search {
+    padding-right: 10px;
+}
+
+[dir="rtl"] .filter-size {
+    padding-right: 5px;
+}
+
+/*****************form section rtl***************/
+[dir="rtl"] #create-product-form input , select{
+    padding:0px 10px 0px 0px;
+}
+
+
+
+/*********profile section **********/
+[dir="rtl"] .profile-section{
+    padding: 45px 70px 0px 0px;
+}
+
+[dir="rtl"] .profile-section .line{
+ margin-right: 40px;
+}
+
+[dir="rtl"] .profile-desc{
+ margin-right: 20px;
+ padding-right: 20px;
+}
+
+
+
+

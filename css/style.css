@@ -1,0 +1,417 @@
+*{
+    margin: 0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    font-family: "Outfit", sans-serif;
+    font-style: normal;
+}
+
+.container {
+    width: 80%;
+    margin:auto;
+}
+
+header{
+    padding:10px 0;
+    width: 95%;
+    margin: 7px auto;
+    border-radius: 12px;
+    box-shadow: 0px 3px 30px 1px #c2c2c2a8;
+    background: linear-gradient(to left , rgb(177, 177, 231),rgb(158, 158, 230));
+}
+
+.header-content{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+}
+
+.header-content .brand{
+    text-decoration: none;
+    font-size: 30px;
+    color:rgb(0, 0, 0);
+}
+
+nav ul {
+    display:flex;
+    list-style:none;
+}
+
+nav ul li a{
+    color:rgb(0, 0, 0);
+    text-decoration: none;
+    display:block;
+    padding: 8px 25px;
+    background-color: rgb(137, 137, 230);
+    border: 2px solid rgb(68, 68, 68);
+    border-radius: 12px;
+    margin:0 4px;
+    transition: 0.5s;
+    text-transform: capitalize;
+}
+
+nav ul li a:hover{
+    opacity: 90%;
+}
+
+nav ul#user_info {
+   display:none;
+}
+
+nav #user_info .shop {
+    color:rgb(0, 0, 0);
+    cursor: pointer;
+}
+
+nav #user_info .shop i {
+    display:flex;
+    border: 0;
+}
+nav #user_info .shop span {
+    position: absolute;
+    bottom:4px ;
+    right:7px;
+    color: rgb(250, 250, 250);
+    font-size: 10px;
+    background-color: red;
+    padding: 0.2px 5px;
+    border-radius: 10px;
+    display:none;
+}
+
+nav #user_info .shop{
+    position:relative;
+    padding: 10px;
+}
+
+nav #user_info .shop .drop-shop-card{
+    position:absolute;
+    transform: translate(-40%,0);
+    background-color:rgb(137, 137, 230) ;
+    width: 230px;
+    border-radius: 15px;
+    top: 60px;
+    display:none;
+    z-index: 10;
+}
+
+
+
+nav #user_info .shop .drop-shop-card p{
+    padding: 20px 0px 10px 20px ;
+    text-transform: capitalize;
+    font-size: larger;
+}
+
+nav #user_info .shop .drop-shop-card a{
+    padding: 15px 15px;
+    margin: 5px 5px;
+    background-color:rgb(190, 190, 245) ;
+    border-radius: 10px;
+    text-transform: capitalize;
+    font-size: larger;
+}
+
+/* *****************form section ********************* */
+
+.form-section{
+    position:absolute;
+    top:50%;
+    left:50%;
+    transform: translate(-50%,-50%);
+    padding:50px 50px;
+    width: 42%;
+    background-color:rgb(204, 204, 243) ;
+    border-radius: 20px;
+    text-align: center;
+}
+
+
+
+.form-section h2{
+    font-size: 40px;
+    letter-spacing: 2px;
+    color:rgb(137, 137, 230);
+    text-transform: uppercase;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.form-section form input{
+    font-family: "Outfit", sans-serif;
+    width: 100%;
+    height: 40px;
+    border: 0px;
+    border-radius: 5px;
+    margin: 8px 0px;
+    padding:0 0 0 5px;
+    outline:0;
+}
+
+.form-section form input[type="submit"] {
+    background-color: rgb(137, 137, 230);
+    border:0;
+    color:white;
+    font-size: 20px;
+    font-weight: bold;
+    text-transform: capitalize;
+    cursor:pointer;
+}
+
+.form-section form input[type="submit"] {
+    background-color: rgb(137, 137, 230);
+    border:0;
+    color:white;
+    font-size: 20px;
+    font-weight: bold;
+    text-transform: capitalize;
+    cursor:pointer;
+    transition: 0.2s;
+}
+
+.form-section form input[type="submit"]:hover {
+    opacity:90%;
+}
+
+.form-section form input[type="text"] , input[type="password"] , input[type="email"] {
+    background-color: #eeeeee;
+}
+
+.form-section form input[type="password"]:focus ,input[type="text"]:focus , input[type="email"]:focus {
+    border: 2px solid rgb(137, 137, 230);
+}
+
+/* *****************product section ********************* */
+.search{
+    width: 100%;
+    height: 45px;
+    border-radius: 10px;
+    margin: 12px 0px 0px 0px;
+    border: 2px solid rgb(189, 189, 189);
+    padding-left: 10px;
+    outline-color:rgb(137, 137, 230) ;
+ }
+
+ .filter-size{
+    width: 100%;
+    height: 40px;
+    border-radius: 8px;
+    margin-top: 8px;
+    border: 1px solid rgb(151, 151, 151);
+    color: rgb(138, 138, 138);
+    padding-left: 5px;
+ }
+
+ 
+.items{
+    width: 49%;
+    margin-right: 0.5%;
+    height: 200px;
+    background: linear-gradient(to right top,rgb(196, 196, 241),rgb(153, 153, 231));
+    border-radius:10px;
+    position:relative;
+    margin-top: 20px;
+    box-shadow: 0px 5px 35px 5px #c2c2c2a8;
+    display: inline-block;
+}
+
+.items .item-one{
+    top: 0;
+    left: 0;
+    bottom: 0;
+    width: 35%;
+    height: 100%;
+}
+.items .item-one img{
+    width: 100%;
+    height: 100%;
+    border-radius: 10px  0px 0px 10px;
+}
+
+.items .item-description{
+    left: 38%;
+    top: 5%;
+    color:rgb(0, 0, 0);
+    position:absolute;
+}
+
+.items .item-description a{
+    text-transform: capitalize;
+    text-decoration: none;
+    font-size: 25px;
+    display:block;
+    color:black;
+    font-weight: 500;
+    cursor: pointer;
+}
+
+.items .item-description p{
+    font-weight: bold;
+    padding-top: 60px;
+    letter-spacing: 1px;
+}
+
+.items .add-product{
+    position:absolute;
+    top:8%;
+    right:3%;
+    text-align: right;
+}
+
+.items .add-product i{
+    color:rgb(0, 0, 0);
+    cursor: pointer;
+    margin-bottom: 110px;
+}
+
+.items .add-product button{
+    display: block;
+    font-family: "Outfit", sans-serif;
+    padding:10px 15px;
+    color:rgb(44, 44, 44);
+    background-color:rgb(137, 137, 230);
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.edittpro{
+    background-color:rgb(137, 137, 230) ;
+    cursor: pointer;
+    border: 2px solid rgb(61, 61, 61);
+    border-radius: 10px;
+    height: 40px;
+    width: 99px;
+    font-family: "Outfit", sans-serif;
+    margin-top: 5px;
+}
+
+
+/*************************item detail ******************************/
+.item-detail img{
+    height: 400px;
+    width: 100%;
+    object-fit:cover;
+    margin:20px 0px 10px 0px;
+    border-radius: 10px;
+}
+
+.item-detail h2{
+    text-transform: capitalize;
+    font-size: 30px;
+}
+
+.item-detail .item-detail-info{
+    width: 100%;
+    height: 140px;
+    background-color: rgb(188, 188, 247);
+    border-radius: 10px;
+    padding: 10px 0px 0px 20px;
+}
+
+.item-detail .item-detail-info p{
+    font-size: 18px;
+    font-weight: bold;
+    margin-top: 15px;
+}
+
+/******************create product section******************/
+.creat-product-icon{
+    position: fixed;
+    width: 60px;
+    height: 60px;
+    background-color: rgb(129, 129, 233);
+    bottom:30px;
+    right:30px;
+    box-shadow: 0px 5px 35px 5px #c2c2c2a8;
+    border-radius: 15px;
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    text-align: center;
+    line-height: 70px;
+};
+
+.creat-product-icon:hover{
+    opacity: 0.6;
+
+}
+
+/************************profile section******************/
+.profile-section{
+       display: flex;
+       background-color:rgb(137, 137, 230) ;
+       border-radius: 20px;
+       height: 300px;
+       padding: 45px 0px 0px 70px;
+
+}
+
+.profile-section .line{
+    background-color: rgb(99, 99, 99);
+    height: 75%;
+    width: 2px;
+    margin-left: 40px;
+    margin-top: 10px;
+
+}
+
+.profile-picture{
+    width: 200;
+    height: 200px;
+    border-radius: 50%;
+}
+
+.profile-desc{
+    width: 70%;
+    height: 100%;
+    margin-left: 20px;
+    padding-top: 20px;
+    padding-left: 20px;
+}
+
+.profile-desc h2 , p {
+    margin-bottom: 20px;
+}
+
+.profile-desc a {
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+    padding:10px 25px;
+    background:linear-gradient(to top right , rgb(137, 137, 230) , rgb(115, 115, 206) ) ;
+    border: 2px solid rgb(65, 65, 65);
+    border-radius: 10px;
+}
+
+/************rtl/ltr******************/
+.ar_lang{
+    color:rgb(0, 0, 0);
+    text-decoration: none;
+    display:block;
+    padding: 8px 10px;
+    background-color: rgb(137, 137, 230);
+    border: 2px solid rgb(68, 68, 68);
+    border-radius: 50%;
+    margin:0 0px;
+    transition: 0.5s;
+    text-transform: capitalize;
+    cursor: pointer;
+
+}
+
+.en_lang{
+    color:rgb(0, 0, 0);
+    text-decoration: none;
+    display:block;
+    padding: 8px 10px;
+    background-color: rgb(137, 137, 230);
+    border: 2px solid rgb(68, 68, 68);
+    border-radius: 50%;
+    margin:0 4px;
+    transition: 0.5s;
+    text-transform: capitalize;
+    cursor: pointer;
+}
+
+

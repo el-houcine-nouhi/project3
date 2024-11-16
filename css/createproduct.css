@@ -1,0 +1,25 @@
+#create-product-form{
+    background-color: rgb(196, 196, 243);
+    border-radius: 10px;
+    text-align: center;
+    padding: 30px 0px;
+}
+
+#product-name , #product-description ,#create-product-select ,#submit-create-product {
+    font-family: "Outfit", sans-serif;
+    height: 45px;
+    width: 80%;
+    border: 1px solid rgb(114, 114, 241) ;
+    outline: 0;
+    border-radius: 10px;
+    padding-left: 10px;
+    margin: 5px 0px;
+}
+
+
+#submit-create-product{
+    cursor: pointer;
+    background-color: rgb(114, 114, 241) ;
+    font-size: 20px;
+    text-transform: capitalize;
+};
